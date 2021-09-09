@@ -1,0 +1,37 @@
+{
+    "test" : "123",
+    "urls" : {
+        "Products" : {
+            "list" : "",
+            "single" : "",
+            "search" : "",
+            "add" : "",
+            "edit" : "",
+            "delete" : ""
+        },
+        "Stocks" : {
+            "list" : "",
+            "single" : "",
+            "search" : "",
+            "add" : "",
+            "edit" : "",
+            "delete" : ""
+        },
+        "Orders" : {
+            "list" : "",
+            "single" : "",
+            "search" : "",
+            "add" : "",
+            "edit" : "",
+            "delete" : ""
+        },
+        "Purchasings" : {
+            "list" : "",
+            "single" : "",
+            "search" : "",
+            "add" : "",
+            "edit" : "",
+            "delete" : ""
+        }
+    }
+}

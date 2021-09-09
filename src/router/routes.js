@@ -10,6 +10,12 @@ const Icons = () => import(/* webpackChunkName: "common" */ "@/pages/Icons.vue")
 const Maps = () => import(/* webpackChunkName: "common" */ "@/pages/Maps.vue");
 const Typography = () => import(/* webpackChunkName: "common" */ "@/pages/Typography.vue");
 const TableList = () => import(/* webpackChunkName: "common" */ "@/pages/TableList.vue");
+const Products = () => import(/* webpackChunkName: "common" */ "@/pages/Products/List.vue");
+const ProductCreate = () => import(/* webpackChunkName: "common" */ "@/pages/Products/Create.vue");
+const ProductEdit = () => import(/* webpackChunkName: "common" */ "@/pages/Products/Edit.vue");
+const Stocks = () => import(/* webpackChunkName: "common" */ "@/pages/Stocks.vue");
+const Orders = () => import(/* webpackChunkName: "common" */ "@/pages/Orders.vue");
+const Purchasing = () => import(/* webpackChunkName: "common" */ "@/pages/Purchasing.vue");
 
 const routes = [
   {
@@ -51,6 +57,36 @@ const routes = [
         path: "table-list",
         name: "table-list",
         component: TableList
+      },
+      {
+        path: "products",
+        name: "products",
+        component: Products
+      },
+      {
+        path: "products/create",
+        name: "Create New Product",
+        component: ProductCreate
+      },
+      {
+        path: "products/edit/:id",
+        name: "Edit Product",
+        component: ProductEdit
+      },
+      {
+        path: "stocks",
+        name: "stocks",
+        component: Stocks
+      },
+      {
+        path: "orders",
+        name: "orders",
+        component: Orders
+      },
+      {
+        path: "purchasing",
+        name: "purchasing",
+        component: Purchasing
       }
     ]
   },
