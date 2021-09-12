@@ -13,8 +13,11 @@ const TableList = () => import(/* webpackChunkName: "common" */ "@/pages/TableLi
 const Products = () => import(/* webpackChunkName: "common" */ "@/pages/Products/List.vue");
 const ProductCreate = () => import(/* webpackChunkName: "common" */ "@/pages/Products/Create.vue");
 const ProductEdit = () => import(/* webpackChunkName: "common" */ "@/pages/Products/Edit.vue");
-const Stocks = () => import(/* webpackChunkName: "common" */ "@/pages/Stocks.vue");
-const Orders = () => import(/* webpackChunkName: "common" */ "@/pages/Orders.vue");
+const Stocks = () => import(/* webpackChunkName: "common" */ "@/pages/Stocks/List.vue");
+const AdjustStocks = () => import(/* webpackChunkName: "common" */ "@/pages/Stocks/Adjust.vue");
+const Orders = () => import(/* webpackChunkName: "common" */ "@/pages/Orders/List.vue");
+const OrderCreate = () => import(/* webpackChunkName: "common" */ "@/pages/Orders/Create.vue");
+const OrderEdit = () => import(/* webpackChunkName: "common" */ "@/pages/Orders/Edit.vue");
 const Purchasing = () => import(/* webpackChunkName: "common" */ "@/pages/Purchasing.vue");
 
 const routes = [
@@ -79,9 +82,24 @@ const routes = [
         component: Stocks
       },
       {
+        path: "stocks/edit/:id",
+        name: "Adjust Stocks",
+        component: AdjustStocks
+      },
+      {
         path: "orders",
         name: "orders",
         component: Orders
+      },
+      {
+        path: "orders/create",
+        name: "Create New Product",
+        component: OrderCreate
+      },
+      {
+        path: "orders/edit/:id",
+        name: "Edit Product",
+        component: OrderEdit
       },
       {
         path: "purchasing",
